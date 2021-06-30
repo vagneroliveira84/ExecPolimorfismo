@@ -1,13 +1,15 @@
 package entities;
 
-import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class UsedProduct extends Product {
 
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	public Date manufactureDate;
+	private Date manufactureDate;
+	
 	
 	public UsedProduct(String name, Double price, Date manufactureDate) {
 		super(name, price);
